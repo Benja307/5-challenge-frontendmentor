@@ -20,6 +20,7 @@ let valor;
 let people;
 let custom;
 
+alert("Aclaración: Darle enter luego de completar cada campo para que los datos se ingresen correctamente");
 reset_btn.disabled = true;
 bill.focus();
 
