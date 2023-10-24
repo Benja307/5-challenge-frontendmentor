@@ -31,6 +31,7 @@ Users should be able to:
 ![](./images/Captura%20desde%202023-10-24%2009-56-34.png)
 ![](./images/Captura%20desde%202023-10-24%2009-57-28.png)
 ![](./images/Captura%20desde%202023-10-24%2009-58-27.png)
+![](./images/fcaa9927-9680-4e4b-8421-fa6a724b0c21.jpeg)
 
 ### Links
 
