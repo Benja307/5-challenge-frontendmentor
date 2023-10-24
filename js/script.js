@@ -165,8 +165,11 @@ function cambiarIdioma(){
         nop_label.textContent = "Number of People";
         descripcion.textContent = "Tip Amount";
         subdescripcion[0].textContent = "/ person";
-        subdescripcion[1].textContent = "/person";
-        other_project.textContent = "Other Projects";        
+        subdescripcion[1].textContent = "/ person";
+        other_project.textContent = "Other Projects";
+        bill.title = "Press enter to send the data";
+        numberOfPeople.title = "Press enter to send the data";
+        custom_input.title = "Press enter to send the data";        
     }else if(language.value === "Español"){
         error1.textContent = "Entrada inválida";
         bill_label.textContent = "Factura";
@@ -183,5 +186,8 @@ function cambiarIdioma(){
         subdescripcion[0].textContent = "/ persona";
         subdescripcion[1].textContent = "/ persona";
         other_project.textContent = "Otros Proyectos";
+        bill.title = "Presione enter para enviar el dato";
+        numberOfPeople.title = "Presione enter para enviar el dato";
+        custom_input.title = "Presione enter para enviar el dato";
     }
 }
