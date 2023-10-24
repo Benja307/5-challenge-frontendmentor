@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+$primary: #26c0ab;
+$very-dark-cyan: #00494d;
+$dark-grayish-cyan: #5e7a7d;
+$grayish-cyan: #7f9c9f;
+$light-grayish-cyan: #c5e4e7;
+$very-light-grayish-cyan: #f4fafa;
+$white: #ffffff;
+//font-family: 'Space Mono', monospace;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $light-grayish-cyan;
+    .left{
+        color: $very-dark-cyan;
+        text-decoration: none;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        .bi-arrow-bar-left{
+            transition: all 1s;
+        }
+        .bi-arrow-bar-left:hover{
+            font-size: 1.2rem;
+            color: $white;
+        }
+    }
+    select{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: $very-dark-cyan;
+        color: $white;
+        padding: 5px;
+    }
+    .logo{
+        margin: 40px 0;
+    }
+    .container{
+        background-color: $white;
+        border-radius: 20px;
+        padding: 20px;
+    }
+}
+
+.formulario{
+    position: relative;
+    .icon{
+        position: absolute;
+        top: 50px;
+        left: 15px;
+    }
+    label{
+        color: $dark-grayish-cyan;
+    }
+    .error-1, .error-2, .error-3{
+        position: absolute;
+        right: 0;
+        color: red;
+        display: none;
+    }
+}
+
+#inputBill, #inputNoP, #inputCustom{
+    background-color: $very-light-grayish-cyan;
+    height: 50px;
+    text-align: right;
+    font-size: 24px;
+    
+}
+
+#inputBill:focus, #inputNoP:focus, #inputCustom:focus{
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    background-color: $very-light-grayish-cyan;
+    color: $dark-grayish-cyan;
+    border: 2px solid $primary;
+}
+
+#inputBill::placeholder, #inputNoP::placeholder, #inputCustom::placeholder{
+    color: $grayish-cyan;
+}
+
+.tip-porcentage{
+    margin: 40px 0;
+    h6{
+        color: $dark-grayish-cyan;
+    }
+    #container-buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        button{
+            border: none;
+            border-radius: 10px;
+            color: $very-light-grayish-cyan;
+            background-color: $very-dark-cyan;
+            height: 50px;
+            font-size: 28px;
+            &:focus{
+                color: $dark-grayish-cyan;
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+.bill{
+    margin: 30px 0;
+    background-color: $very-dark-cyan;
+    border-radius: 15px;
+    padding: 30px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .tip-amount, .total{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cost{
+        font-size: 24px;
+        color: $primary;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+    #reset{
+        border: 0;
+        border-radius: 5px;
+        height: 40px;
+        background-color: $primary;
+        font-size: 20px;
+        color: $very-dark-cyan;
+    }
+}
+
+article{
+    .descripcion{
+        color: $white;
+        margin: 0;
+    }   
+    .subdescripcion{
+        color: $dark-grayish-cyan;
+        margin: 0;
+    } 
+}
+
+@media (min-width:1200px){
+    body{
+        .container{
+            padding: 30px;
+            display: flex;
+            width: 70%;
+        }
+    }
+    
+    .principal{
+        margin: 30px;
+        width: 50%;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+    
+    .tip-porcentage{
+        #container-buttons{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+        }
+    }
+    
+    .bill{
+        padding: 30px;
+        margin: 0;
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 4fr;
+        .tip-amount, .total{
+            align-items: center;
+        }
+        .cost{
+            font-size: 50px;
+        }
+        .reset{
+            align-self: flex-end;
+        }
+    }
+}

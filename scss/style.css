@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c5e4e7;
+}
+
+body .left {
+  color: #00494d;
+  text-decoration: none;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+body .left .bi-arrow-bar-left {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+body .left .bi-arrow-bar-left:hover {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+body select {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #00494d;
+  color: #ffffff;
+  padding: 5px;
+}
+
+body .logo {
+  margin: 40px 0;
+}
+
+body .container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.formulario {
+  position: relative;
+}
+
+.formulario .icon {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+}
+
+.formulario label {
+  color: #5e7a7d;
+}
+
+.formulario .error-1, .formulario .error-2, .formulario .error-3 {
+  position: absolute;
+  right: 0;
+  color: red;
+  display: none;
+}
+
+#inputBill, #inputNoP, #inputCustom {
+  background-color: #f4fafa;
+  height: 50px;
+  text-align: right;
+  font-size: 24px;
+}
+
+#inputBill:focus, #inputNoP:focus, #inputCustom:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #f4fafa;
+  color: #5e7a7d;
+  border: 2px solid #26c0ab;
+}
+
+#inputBill::-webkit-input-placeholder, #inputNoP::-webkit-input-placeholder, #inputCustom::-webkit-input-placeholder {
+  color: #7f9c9f;
+}
+
+#inputBill:-ms-input-placeholder, #inputNoP:-ms-input-placeholder, #inputCustom:-ms-input-placeholder {
+  color: #7f9c9f;
+}
+
+#inputBill::-ms-input-placeholder, #inputNoP::-ms-input-placeholder, #inputCustom::-ms-input-placeholder {
+  color: #7f9c9f;
+}
+
+#inputBill::placeholder, #inputNoP::placeholder, #inputCustom::placeholder {
+  color: #7f9c9f;
+}
+
+.tip-porcentage {
+  margin: 40px 0;
+}
+
+.tip-porcentage h6 {
+  color: #5e7a7d;
+}
+
+.tip-porcentage #container-buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  gap: 10px;
+}
+
+.tip-porcentage #container-buttons button {
+  border: none;
+  border-radius: 10px;
+  color: #f4fafa;
+  background-color: #00494d;
+  height: 50px;
+  font-size: 28px;
+}
+
+.tip-porcentage #container-buttons button:focus {
+  color: #5e7a7d;
+  background-color: #26c0ab;
+}
+
+.bill {
+  margin: 30px 0;
+  background-color: #00494d;
+  border-radius: 15px;
+  padding: 30px 15px 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.bill .tip-amount, .bill .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bill .cost {
+  font-size: 24px;
+  color: #26c0ab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2px;
+}
+
+.bill #reset {
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #26c0ab;
+  font-size: 20px;
+  color: #00494d;
+}
+
+article .descripcion {
+  color: #ffffff;
+  margin: 0;
+}
+
+article .subdescripcion {
+  color: #5e7a7d;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  body .container {
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+  }
+  .principal {
+    margin: 30px;
+    width: 50%;
+  }
+  .formulario {
+    width: 100%;
+  }
+  .tip-porcentage #container-buttons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+  .bill {
+    padding: 30px;
+    margin: 0;
+    width: 50%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 2fr 2fr 4fr;
+        grid-template-rows: 2fr 2fr 4fr;
+  }
+  .bill .tip-amount, .bill .total {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bill .cost {
+    font-size: 50px;
+  }
+  .bill .reset {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+/*# sourceMappingURL=style.css.map */
